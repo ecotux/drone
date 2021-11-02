@@ -1,0 +1,21 @@
+# query
+AT
+AT+UART?
+AT+ROLE?
+AT+ADDR?
+AT+CMODE?
+AT+BIND?
+ 
+# set slave
+AT
+AT+UART=38400,0,0
+AT+ROLE=0
+AT+CMODE=1
+ 
+# set master
+AT
+AT+UART=38400,0,0
+AT+ROLE=1
+AT+CMODE=0
+AT+BIND=<mac address con virgole al posto dei duepunti>
+# AT+BIND=98d3,35,b836
